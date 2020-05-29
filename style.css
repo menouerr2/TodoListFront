@@ -30,11 +30,11 @@ html {
   
   input {
     grid-area: input;
-    border-radius: 1.5rem;
-    -webkit-border-radius: 1.5rem;
-    -moz-border-radius: 1.5rem;
-    -ms-border-radius: 1.5rem;
-    -o-border-radius: 1.5rem;
+    border-radius: 3rem;
+    -webkit-border-radius: 3rem;
+    -moz-border-radius: 3rem;
+    -ms-border-radius: 3rem;
+    -o-border-radius: 3rem;
   }
   
   ul {
@@ -42,7 +42,7 @@ html {
   }
   
   li {
-    font-size: 1.6rem;
+    font-size: 3rem;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-areas: "li .  close";
@@ -54,8 +54,8 @@ html {
   
   #submit {
     grid-area: submit;
-    width: 20rem;
-    font-size: 1.25rem;
+    width: 15rem;
+    font-size: 3rem;
     border-radius: 1.5rem;
     -webkit-border-radius: 1.5rem;
     -moz-border-radius: 1.5rem;
