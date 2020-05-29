@@ -1,0 +1,85 @@
+html {
+    font-size: 10px;
+    margin: 0;
+    padding: 0;
+    font-family: "Nunito", sans-serif;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: minmax(1rem, auto);
+    grid-template-areas: ". . titre . ." ". input input submit ." ". ul ul ul ." ". . darkMode . .";
+    grid-gap: 1rem;
+    margin-top: 25vh;
+    background-image: url("/images/arrière-plan-clair-.jpg");
+  }
+  
+  body.darkMode {
+    color: white;
+    background-image: url("/images/mountain-2563741_960_720.jpg");
+    background-size: cover;
+  }
+  
+  h1 {
+    grid-area: titre;
+    font-size: 2rem;
+  }
+  
+  input {
+    grid-area: input;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+  }
+  
+  ul {
+    grid-area: ul;
+  }
+  
+  li {
+    font-size: 1.6rem;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: "li .  close";
+  }
+  
+  ul li.checked {
+    text-decoration: line-through;
+  }
+  
+  #submit {
+    grid-area: submit;
+    width: 20rem;
+    font-size: 1.25rem;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+  }
+  
+  .close {
+    grid-area: close;
+    width: 20rem;
+    font-size: 1.25rem;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+  }
+  
+  #buttonDarkMode {
+    grid-area: darkMode;
+    width: 20rem;
+    border-radius: 1.5rem;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+  }
